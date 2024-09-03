@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика</title>
+    <link rel="stylesheet" href="styles/main-styles.css">
+    <link rel="stylesheet" href="styles/statistics.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js
+    "></script>
+</head>
+<body>
+      <div class="full-page">
+
+        <aside class="aside">
+          <h4>Показать статистику по:</h4>
+          <div id="doctor-select-container" class="doctor-select-container">
+            <div id="doctor-select"></div>
+          </div>
+
+          <h4>В промежутке</h4>
+          <input type="date" class="input-datepicker" id="input-startDate" value="2023-01-01" min="2023-01-01" max="2023-12-31"/>
+          <input type="date" class="input-datepicker" id="input-endDate" value="2023-12-31" min="2023-01-01" max="2023-12-31"/>
+        </aside>
+
+        <main class="main">
+
+          <nav class="main-nav">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="main.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="statistics.html">Статистика</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="admin.html">Админ</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="main-container" id="main-container">
+            
+            <div class = "statistics-block">
+              <h3>Количество записей каждого специалиста за выбранный период</h3>
+              <div id="second-chart" style="width: 100%;height:500px;"></div>
+            </div>
+
+           <div class = "statistics-block">
+              <h3>Общее количество записей за выбранный промежуток</h3>
+              <div id="third-chart" style="width: 100%;height:500px;"></div>
+           </div>
+
+           <div class = "statistics-block">
+              <h3>Таблица со сводной информацией</h3>
+              <div id = "doctor-container-admin" class = "ag-theme-quartz" style = " height: 500px; width: 100%; padding: 0px 50px;"></div>
+           </div>
+
+          </div>
+        </main>
+      </div>
+     <script type = "module" src = "scripts/echarts.js"></script>
+</body>
+</html>

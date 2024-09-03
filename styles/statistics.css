@@ -1,0 +1,39 @@
+aside{
+    padding: 20px;
+}
+
+#doctor-select{
+    border-top: 1px solid lightgrey;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.doctor-element{
+    padding: 10px 0px !important;
+    border-bottom: 1px solid lightgray;
+    
+}
+
+.doctor-element:hover{
+    background-color: whitesmoke;
+}
+
+.main
+{
+    border-left: 1px solid lightgrey;
+}
+
+#first-chart{
+    border: 2px;
+}
+
+#doctor-container-admin{
+    margin-bottom: 50px;
+}
+
+/* .statistics-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+} */

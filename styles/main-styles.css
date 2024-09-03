@@ -1,0 +1,159 @@
+.ag-theme-quartz {
+    --ag-range-selection-border-color: transparent !important;
+    --ag-selected-row-background-color: transparent !important;
+    --ag-checkbox-checked-color: #198754 !important;
+    --ag-checkbox-unchecked-color: lightgray !important;
+    --ag-checkbox-indeterminate-color: grey !important;
+    --ag-active-color: transparent !important;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+
+}
+
+ul {
+    padding-left: 0 !important;
+    list-style: none;
+}
+
+input[type='checkbox'] {
+    accent-color: #198754;
+}
+
+.label{
+    padding: 10px 0px;
+}
+
+.btn-outline-success {
+    margin-top: 10px;
+}
+
+.btn-success {
+    margin-top: 10px;
+}
+
+.full-page {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-nav {
+    width: 80vw;
+    border-bottom: 1px solid lightgrey;
+}
+
+.nav-link{
+    color: black !important;
+}
+
+.main {
+    border-left: 1px solid lightgray;
+}
+
+.main-container{
+    margin: 10px;
+}
+
+/* Боковая панель */
+.aside {
+    width: 20%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+}
+
+/* Выбор даты */
+.datepicker-container {
+    padding: 20px;
+
+    border-bottom: 1px solid lightgray;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.input-datepicker {
+    margin-top: 10px;
+
+    border: 1px solid lightgray;
+}
+
+.doctorpicker-container {
+    padding: 20px 20px;
+}
+
+.doctor-list-container {
+    max-height: 400px;
+    overflow: auto;
+}
+
+.doctor-element {
+    /* margin: 10px 0; */
+    gap: 10px;
+    /* border-bottom: 1px solid lightgray; */
+
+    display: flex;
+}
+
+.selected-cell {
+    background-color: whitesmoke;
+}
+
+.doctor-element:hover {
+    background-color: whitesmoke;
+}
+
+.schedule-container{
+    margin-top: 20px;
+    gap: 10px;
+
+    display: flex;
+    flex-direction: row;
+
+    height: 85%;
+}
+
+.label {
+    width: 100%;
+}
+
+#btn-open-modal{
+    width: 100%;
+}
+
+.modal-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media (max-width: 1000px) { 
+    
+    .full-page{
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .aside {
+        width: 100%;
+        height: auto;
+    }
+
+    .doctor-list-container {
+        max-height: 200px;
+        overflow-y: scroll;
+    }
+
+    .main-nav{
+        width: 100%;
+        align-content: center;
+        text-align: center;
+    }
+
+}

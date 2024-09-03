@@ -1,0 +1,22 @@
+.add-doctor-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.add-doctor-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#add-doctor-btn{
+    align-self: flex-end;
+}
+
+.main-container{ 
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
